@@ -1,46 +1,46 @@
 export default function TermsAndConditions() {
   return (
-    <main style={{ padding: "40px", maxWidth: "800px", margin: "auto" }}>
-      <h1>Terms & Conditions</h1>
+    <main className="min-h-screen bg-[#03060b] text-white px-6 py-20">
+      <div className="max-w-4xl mx-auto">
 
-      <h2>Service Description</h2>
-      <p>
-        Dakota Collective LLC provides lead generation services by delivering business contact data to users.
-      </p>
+        <div className="mb-12">
+          <h1 className="text-5xl font-black tracking-tight">
+            Terms & Conditions
+          </h1>
+        </div>
 
-      <h2>SMS Program</h2>
-      <p>
-        By opting in, you agree to receive SMS messages related to lead delivery notifications, account updates, and promotional offers.
-      </p>
-      <p>Message frequency may vary.</p>
-      <p>Message and data rates may apply.</p>
+        <div className="space-y-8 rounded-[32px] border border-white/10 bg-white/[0.04] p-8 backdrop-blur-xl shadow-[0_20px_80px_rgba(0,0,0,0.4)]">
 
-      <h2>Opt-Out Instructions</h2>
-      <p>You can opt out at any time by replying <strong>STOP</strong>.</p>
-      <p>For help, reply <strong>HELP</strong>.</p>
+          <section>
+            <h2 className="text-2xl font-bold mb-2">Service</h2>
+            <p className="text-white/60">
+              Dakota Collective provides lead generation services and business data.
+            </p>
+          </section>
 
-      <h2>User Responsibility</h2>
-      <p>
-        Users agree to use provided data responsibly and in compliance with applicable laws.
-      </p>
+          <section>
+            <h2 className="text-2xl font-bold mb-2">SMS Program</h2>
+            <p className="text-white/60">
+              You may receive SMS messages related to your account and orders.
+            </p>
+          </section>
 
-      <h2>Payments</h2>
-      <p>
-        All purchases are final unless otherwise stated.
-      </p>
+          <section>
+            <h2 className="text-2xl font-bold mb-2">Opt-Out</h2>
+            <p className="text-white/60">
+              Reply <strong>STOP</strong> to unsubscribe. Reply <strong>HELP</strong> for assistance.
+            </p>
+          </section>
 
-      <h2>Limitation of Liability</h2>
-      <p>
-        Dakota Collective LLC is not responsible for outcomes resulting from the use of provided leads.
-      </p>
+          <section>
+            <h2 className="text-2xl font-bold mb-2">Liability</h2>
+            <p className="text-white/60">
+              We are not responsible for results from the use of leads.
+            </p>
+          </section>
 
-      <h2>Changes</h2>
-      <p>
-        We may update these terms at any time.
-      </p>
-
-      <h2>Contact</h2>
-      <p>support@dakotacollectivellc.com</p>
+        </div>
+      </div>
     </main>
   );
 }

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ContactForm from "./components/ContactForm";
 import Navbar from "@/app/components/Navbar";
+
 const stats = [
   { value: "10M+", label: "profiles scanned across workflows" },
   { value: "190+", label: "countries and regional market coverage" },
@@ -808,9 +809,29 @@ export default function Home() {
         <FAQ />
         <FinalCTA />
       </div>
+      <footer className="border-t border-white/10 mt-20 pt-8 text-center text-sm text-gray-400">
+        <div className="flex justify-center gap-6">
+
+          <Link href="/privacy-policy" className="hover:text-white">
+            Privacy Policy
+          </Link>
+
+          <Link href="/terms-and-conditions" className="hover:text-white">
+            Terms & Conditions
+          </Link>
+
+        </div>
+
+        <p className="mt-4 text-gray-500">
+          © 2026 Dakota Collective LLC. All rights reserved.
+        </p>
+      </footer>
+
     </main>
   );
 }
+
+
 
                   
 
