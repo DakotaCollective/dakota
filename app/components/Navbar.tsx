@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <div className="fixed top-6 left-1/2 -translate-x-1/2 w-[95%] max-w-6xl z-50">
       
-      <div className="flex items-center justify-between px-6 py-4 rounded-full border border-white/10 bg-white/5 backdrop-blur-xl shadow-[0_10px_40px_rgba(0,0,0,0.4)]">
+      <div className="hidden sm:flex flex-col">
         
         {/* LOGO */}
         <div className="flex items-center gap-3">

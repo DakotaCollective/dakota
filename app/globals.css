@@ -139,3 +139,23 @@ img {
 h1, h2, h3 {
   letter-spacing: -0.02em;
 }
+
+
+@media (max-width: 640px) {
+  .section {
+    padding: 60px 16px;
+  }
+
+  h1 {
+    font-size: 2rem !important;
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-size: 1.6rem !important;
+  }
+
+  h3 {
+    font-size: 1.2rem !important;
+  }
+}

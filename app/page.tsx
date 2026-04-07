@@ -281,7 +281,7 @@ function GridGlow() {
 function Hero() {
   return (
     <section className="relative overflow-hidden px-4 pb-16 pt-16 sm:px-6 lg:px-8 lg:pb-24 lg:pt-20">
-      <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[1.15fr_0.85fr]">
+      <div className="mx-auto grid max-w-7xl items-center gap-14 grid-cols-1 lg:grid-cols-[1.15fr_0.85fr]">
         <div>
           <SectionBadge>Lead infrastructure for agencies and operators</SectionBadge>
 
@@ -493,7 +493,7 @@ function Features() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-6 xl:grid-cols-3">
+        <div className="mt-14 grid gap-6 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">
           {featureCards.map((card) => (
             <div
               key={card.title}

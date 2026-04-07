@@ -1,5 +1,5 @@
 import nodemailer from "nodemailer";
-
+export const dynamic = "force-dynamic";
 export async function POST(req: Request) {
   const data = await req.json();
 
@@ -7,7 +7,7 @@ export async function POST(req: Request) {
     service: "gmail",
     auth: {
       user: "dakotacollectivee@gmail.com",
-      pass: "oiqt csmi sqft scpl"
+      pass: process.env.EMAIL_PASS
     },
   });
 
